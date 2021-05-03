@@ -6,7 +6,7 @@ import numpy as np
 
 face_classifier = cv2.CascadeClassifier('./Harcascade/haarcascade_frontalface_default.xml')
 classifier=load_model('./Models/model_v_47.hdf5')
-class_labels={0: 'Angry', 1: 'Disgust', 2: 'Fear', 3: 'Happy', 4: 'Neutral', 5: 'Sad', 6: 'Surprise'}
+class_labels={0: 'Angry', 1: 'Disgust', 2: 'Fear', 3: 'Happy', 4: 'Neutral', 5: 'Sad', 6: 'Surprise', 7:'Mad'}
 
 cap = cv2.VideoCapture(0)
 motion=[cap]+[class_labels]
