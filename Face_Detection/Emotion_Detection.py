@@ -28,6 +28,7 @@ while True:
     for face in allfaces:
         roi = face.astype("float") / 255.0
         roi = img_to_array(roi)
+        roi = vector(x_i)
         roi = np.expand_dims(roi, axis=0)
         preds = classifier.predict(roi)[0]
         label = class_labels[preds.argmax()]
