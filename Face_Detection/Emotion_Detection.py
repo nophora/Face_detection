@@ -24,6 +24,7 @@ while True:
         rects.append((x, w, y, h))
     i = 0
     x_i= [x,i]
+    vector = 48.96
     for face in allfaces:
         roi = face.astype("float") / 255.0
         roi = img_to_array(roi)
