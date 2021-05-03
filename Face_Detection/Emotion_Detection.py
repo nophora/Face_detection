@@ -23,6 +23,7 @@ while True:
         allfaces.append(roi_gray)
         rects.append((x, w, y, h))
     i = 0
+    x_i= [x,i]
     for face in allfaces:
         roi = face.astype("float") / 255.0
         roi = img_to_array(roi)
